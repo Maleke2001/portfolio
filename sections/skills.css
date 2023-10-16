@@ -1,0 +1,79 @@
+.service-section{
+    padding: 6rem 0;
+   
+}
+.service-section .section-title{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.service_col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #eee;
+    padding:2rem 0;
+    margin: 0 0 20px 0;
+    border-radius: 20px;
+}
+.service_col img{
+    height: 180px;
+}
+.service_text{
+    width: 75%;
+    text-align: center;
+}
+.service_col h6{
+    font-family: var(--roboto-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.service_col p{
+    font-size: var(--smallPara-font-size);
+    color: var(--grey-color);
+    line-height: var(--para-line-height);
+}
+.skills-bar{
+    height: 8px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.skills_pecernt_bar{
+    border-radius: 10px;
+    background-color: var(--grey-color);
+    height: 100%;
+}
+#skills_pecernt_bar_one{
+    width: 80%;
+}
+#skills_pecernt_bar_two{width: 70%;}
+#skills_pecernt_bar_three{width: 70%;}
+.perc_tooltip{
+    background-color: var(--grey-color);
+    color: #fff;
+    padding: 6px 20px;
+    position: absolute;
+    top: -43px;
+    left: 0;
+    z-index: 2;
+    font-size: 12px;
+    border-radius: 20px;
+}
+.skills-bar::before{
+    content: "";
+    top: -22px;
+    z-index: 1;
+    position: absolute;
+    background-color: var(--grey-color);
+    width: 10px;
+    height: 10px;
+    left: 8px;
+    display: block;
+    rotate: 40deg;
+}

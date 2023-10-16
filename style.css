@@ -1,0 +1,104 @@
+@import url("sections/header.css");
+@import url("sections/about.css");
+@import url("sections/skills.css");
+@import url("sections/project.css");
+@import url("sections/contact.css");
+:root{
+    --roboto-font-family: 'Roboto', sans-serif;
+    --content-width:100%;
+    --content-margin:0 auto;
+    --white-color:#fff;
+    --lightgrey-background-color: #f1f1f1;
+    --grey-color: #263238;
+    --sectionTitle-font-size:30px;
+    --pageTitle-font-weight:600;
+    --section-border: 1px solid #eee;
+    --section-padding: 3rem 1rem 0 1rem;
+    --col-border: 1px solid #ccc;
+    --thick-font-weight:600;
+    --thiner-font-weight:300;
+    --smallPara-font-size:13px;
+    --para-line-height:25px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.page-container{
+    margin: var(--content-margin);
+    width: var(--content-width);
+}
+
+@media(min-width:2560px){
+    .page-container{
+        --content-width:65%;
+       }
+}
+.section_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(min-width:768px){
+    .page-container{
+        --content-width:85%;
+    }
+    nav .page-container{padding: 0;}
+    #menu-bar{display: none;}
+    .nav-links{
+        padding: 0;
+        display: block;
+        width: auto;
+        top: 10px;
+    }
+    .nav-links a{
+        padding: 0 0 0 50px;
+        display: inline-block;
+        border: none;
+    }
+    .project_nav {display: flex;}
+}
+@media(min-width:1024px){
+    .header_content .page-container{
+        height: 700px;
+       
+    }
+    .hero_text_box{
+        width: 40%;
+        padding-left: 0;
+    }
+    .hero_text_box h1{
+        font-size: 50px;
+        line-height: 60px;
+        
+    }
+    .hero_text_box p{}
+    #header_image{
+        display: block;
+    }
+    .section-title h2{
+        --sectionTitle-font-size:45px;
+        color: var(--grey-color);
+    }
+    
+    .about-section .section-title{width: 70%;}
+    .about_text{width: 48%; margin: 0;}
+    .about_image_box{display: block;}
+    .project_col{width: 31%; 
+    }
+    .project_col:last-child{margin-right: 0;}
+    .service_col{
+        width: 31%;
+        margin: 0 20px 0 0;
+    }
+    .service_col:last-child{
+        margin-right: 0;
+    }
+    .service_col img{
+        height: 250px;}
+
+}

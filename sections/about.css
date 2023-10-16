@@ -1,0 +1,84 @@
+.about-section{
+    padding-top: 4rem;
+    background-color: #f8f8f8;
+}
+.about_image_box{
+    width: 48%;
+    display: none;
+}
+#about_image{
+    height: 650px;
+    width: 100%;
+    margin-left: 3rem;
+}
+.about_text{
+    width: 100%;
+    font-family: var(--roboto-font-family);
+    margin:3rem 20px;
+}
+.about_text .section-title{
+    margin-bottom: 3rem;
+}
+.background-section{
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+}
+.about-academy{
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: var(--roboto-font-family);
+    position: relative;
+}
+.about-academy:after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: var(--grey-color);
+    left: -35px;
+    top: 18px;
+    border-radius: 50%;
+}
+.about-academy .academy_date{
+    font-size: 13px;
+    font-weight: var(--thiner-font-weight);
+    background-color: #fff;
+    border: var(--col-border);
+    border-radius: 20px;
+    padding: 10px 15px;
+    position: relative;
+}
+.academy_date::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #ccc;
+    left: -31px;
+    top: 15px;
+}
+.academy_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.academy_title h6{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--grey-color);
+}
+.about_text  .expand-sign{
+    font-weight: 700;
+    color: var(--grey-color) ;
+    font-size: 25px;
+}
+.about-academy p{
+    font-size: var(--smallPara-font-size);
+    width: 100%;
+    line-height: var(--para-line-height);
+    color: var(--grey-color);
+    margin-top: 1rem;
+}

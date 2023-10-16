@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cards{
+        background-color: #f1f1f1;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    @media(min-width:768px){
+        .parent{
+        flex-direction: row;}
+    }
+</style>
+<body>
+  <div class="parent">
+    <div class="cards">
+
+    </div>
+    <div class="cards">
+
+    </div>
+  </div>
+  <script>
+    let name = [];
+    name[0] = 'love';
+    name[1] = 'test';
+document.write(name[0]);
+
+  </script>
+</body>
+</html>
